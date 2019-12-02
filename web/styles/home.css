@@ -1,0 +1,37 @@
+home-page{
+    display: grid;
+    grid-template: 
+    "header-item"
+    "project-list"
+    "footer";
+    gap: 1em;
+    min-height: 100%;
+}
+
+header-item{
+    grid-area: header-item;
+    background: #eee;
+    display: block;
+    padding: 1em;
+}
+
+project-list{
+    grid-area: project-list;
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 10px;
+
+    justify-self: center;
+    max-width: 1080px;
+}
+
+project-item{
+    display: block;
+    background: #eee;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+footer{
+    grid-area: footer;
+}

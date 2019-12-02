@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title>WSAN</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/home.css">
 
     <script src="lib/sugar.js"></script>
     <script>Sugar.extend()</script>
@@ -15,24 +16,54 @@
 
 <body>
     <nav>
-        <navbar-item class="start">MySite</navbar-item>
-        <navbar-item>Home</navbar-item>
-        <navbar-item>Artwork</navbar-item>
-        <navbar-item>Projects</navbar-item>
-        <navbar-item>Resume</navbar-item>
+        <navbar-item class="start">WSAN</navbar-item>
+        <navbar-item class="selected">
+            <a href="#" onclick=setNav(0)>
+                Home
+            </a>
+        </navbar-item>
+        <navbar-item>
+            <a href="#" onclick=setNav(1)>
+                Artwork
+            </a>
+        </navbar-item>
+        <navbar-item>
+            <a href="#" onclick=setNav(2)>
+                Projects
+            </a>
+        </navbar-item>
+        <navbar-item>
+            <a href="images/Resume.pdf">
+                Resume
+            </a>
+        </navbar-item>
     </nav>
 
-    <header-item>
-        "This is some pretentious sounding words you got written there. Are you bored?" -- Abraham Lincoln (2019)
-    </header-item>
+    <home-page class="section">
+        <header-item>
+            "This is some pretentious sounding words you got written there. Are you bored?" -- Abraham Lincoln (2019)
+        </header-item>
 
-    <project-list>
+        <project-list>
+        </project-list>
+    </home-page>
 
-    </project-list>
+    <artwork-page>
+        <header-item>
+            Artwork
+        </header-item>
+    </artwork-page>
+
+    <project-page>
+        <header-item>
+            Projects
+        </header-item>
+    </project-page>
 
     <footer>
 
     </footer>
+    <script src="main.js"></script>
 </body>
 
 </html>

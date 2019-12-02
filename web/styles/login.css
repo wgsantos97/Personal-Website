@@ -1,0 +1,61 @@
+html{
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: grid;
+    grid-template: 
+    "form";
+    min-height: 100%;
+}
+
+form{
+    grid-area: form;
+    margin: auto;
+    background: #eee;
+    border-radius: 10px;
+    padding: 20px;
+
+    display: grid;
+    grid-template: 
+    "title"
+    "username"
+    "password"
+    "submit"
+    "rememberme";
+    gap: 10px;
+}
+
+admin-title{
+    grid-area: title;
+    text-align: center;
+    width: 100%;
+}
+
+admin-username{
+    grid-area: username;
+}
+
+admin-password{
+    grid-area: password;
+}
+
+admin-submit{
+    grid-area: submit;
+    margin: auto;
+}
+
+admin-submit button{
+    border: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+    font-size: 14px;
+    color: white;
+    background-color: #008CBA;
+    cursor: pointer;
+}
+
+admin-rememberme{
+    grid-area: rememberme;
+}
