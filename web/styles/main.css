@@ -5,29 +5,34 @@ html{
 
 @media only screen and (min-width: 900px) {
     nav {
-        font-size: 1.3em;
+        font-size: 1.4em;
     }
 }
 
 body {
     margin: 0;
-    background: #303643;
+    background: #0f0f0f;
 }
 
 nav {
-    background: #222;
+    background: #0f0f0f;
     display: grid;
     justify-items: stretch;
     grid-auto-flow: column;
     grid-template-columns: auto;
     grid-auto-columns: 5em;
-    column-gap: 10px;
+    height: 2.5em;
 }
 
 navbar-item{
-    background: #222;
+    background: #0f0f0f;
     color: #eee;
     padding: .5em;
+    -webkit-transition: all 0.3s linear;
+       -moz-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+         -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
 }
 
 navbar-item.start{
