@@ -1,4 +1,5 @@
 home-page{
+    margin: 1em;
     display: grid;
     grid-template: 
     "header-item"
@@ -13,6 +14,7 @@ header-item{
     background: #eee;
     display: block;
     padding: 1em;
+    justify-self: center;
 }
 
 project-list{
@@ -20,7 +22,6 @@ project-list{
     display: grid;
     grid-auto-flow: row;
     row-gap: 10px;
-
     justify-self: center;
     max-width: 1080px;
 }
@@ -34,4 +35,27 @@ project-item{
 
 footer{
     grid-area: footer;
+}
+
+artwork-page{
+    margin: 1em;
+    display: grid;
+    grid-template:
+    "header-item"
+    "artwork-list";
+    gap: 1em;
+}
+
+artwork-list{
+    grid-area: artwork-list;
+    gap: 1em;
+    min-height: 100%;
+    justify-self: center;
+}
+
+artwork-item{
+    display: block;
+    background: #eee;
+    padding: 10px;
+    border-radius: 10px;
 }

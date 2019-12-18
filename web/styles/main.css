@@ -3,16 +3,19 @@ html{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-@media screen and (min-width: 900px) {
-    body{
-        margin: 25px;
+@media only screen and (min-width: 900px) {
+    nav {
+        font-size: 1.3em;
     }
 }
 
-nav {
-    background: #eee;
-    /* padding: 1em; */
+body {
+    margin: 0;
+    background: #303643;
+}
 
+nav {
+    background: #222;
     display: grid;
     justify-items: stretch;
     grid-auto-flow: column;
@@ -24,7 +27,7 @@ nav {
 navbar-item{
     background: #222;
     color: #eee;
-    padding: 0.5em;
+    padding: .5em;
 }
 
 navbar-item.start{
@@ -37,12 +40,12 @@ navbar-item a{
 }
 
 navbar-item:hover{
-    background-color: #ff3333;
+    background-color: #CE961F;
 }
 
 navbar-item.selected{
     color: #eee;
-    background-color: #ff3333;
+    background-color: #CE961F;
 }
 
 navbar-item.selected{
