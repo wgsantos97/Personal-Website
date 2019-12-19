@@ -25,6 +25,7 @@ nav {
 }
 
 navbar-item{
+    text-align: center;
     background: #0f0f0f;
     color: #eee;
     padding: .5em;
@@ -36,7 +37,16 @@ navbar-item{
 }
 
 navbar-item.start{
+    text-align: left;
     justify-self: start;
+}
+
+navbar-item.start:hover{
+    background-color: #0f0f0f;
+}
+
+navbar-item.start a:hover{
+    color: #CE961F;
 }
 
 navbar-item a{
@@ -57,6 +67,13 @@ navbar-item.selected{
     pointer-events: none;
 }
 
-navbar-item.start{
-    pointer-events: none;
+footer{
+    padding: 1em;
+    background: #0C0C0C;
+    color: #eee;
+    grid-area: footer;
+}
+
+footer h4{
+    text-align: center;
 }

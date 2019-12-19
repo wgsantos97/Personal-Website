@@ -64,23 +64,45 @@ project-item:hover{
     color: #eee;
 }
 
-footer{
-    grid-area: footer;
-}
-
 artwork-page{
-    margin: 1em;
     display: grid;
     grid-template:
+    "art-banner"
     "artwork-list";
-    gap: 1em;
+    gap: 3em;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+art-banner{
+    grid-area: art-banner;
+    display: block;
+    background: #eee url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f456f082-a688-4530-92f9-4841e2bec479/dcfwkkd-c63cc61f-59f9-4a9d-80da-1135db185cb5.jpg/v1/fill/w_1024,h_410,q_75,strp/site_header_by_wsan1_dcfwkkd-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDEwIiwicGF0aCI6IlwvZlwvZjQ1NmYwODItYTY4OC00NTMwLTkyZjktNDg0MWUyYmVjNDc5XC9kY2Z3a2tkLWM2M2NjNjFmLTU5ZjktNGE5ZC04MGRhLTExMzVkYjE4NWNiNS5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.zjtKF1yHjwFPiqjYSUtAhhFny21oZrfJwaj1NZIhR_U") repeat-x 0 0;
+    background-size: 100%;
+    height: 36em;
+    animation: slide 50s linear infinite;
+}
+
+/* This handles the parameters for the animation of the background.*/
+@keyframes slide {
+    from {background-position: 0 0;}
+    to {background-position: -1500px 0;}
 }
 
 artwork-list{
     grid-area: artwork-list;
     gap: 1em;
-    min-height: 100%;
     justify-self: center;
+    height: 20em;
+    width: 70%;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+artwork-card img{
+    width: 100%;
+    height: 20em;
+    object-fit: cover;
 }
 
 artwork-item{

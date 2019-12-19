@@ -1,4 +1,4 @@
-let currentPage = 0
+let currentPage = 1
 let navbarList = document.getElementsByTagName("navbar-item")
 let page = {
     0: document.getElementsByTagName("home-page")[0],
